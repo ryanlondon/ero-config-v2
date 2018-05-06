@@ -1,0 +1,31 @@
+{
+  "name": "ero-config-v2",
+  "version": "2.0.0",
+  "description": "Configuration tool for Ero Framework for Crestron",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanlondon/ero-config-v2.git"
+  },
+  "keywords": [
+    "Crestron",
+    "Ero"
+  ],
+  "author": "ryanlondon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryanlondon/ero-config-v2/issues"
+  },
+  "homepage": "https://github.com/ryanlondon/ero-config-v2#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "pg": "^7.4.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.4"
+  }
+}
