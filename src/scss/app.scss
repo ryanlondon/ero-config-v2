@@ -1,7 +1,15 @@
 $primary_font_stack: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$header-color: #4390ab;
+$light-text-color: #f0f0f0;
+
+@import 'header';
 
 body {
   margin: 0;
   padding: 0;
   font-family: $primary-font-stack;
+}
+
+h1 {
+  font-weight: 200;
 }
