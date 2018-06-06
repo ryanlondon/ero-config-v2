@@ -3,8 +3,9 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
 
-const projectController = require('./controllers/projectController');
+const systemController = require('./controllers/systemController');
 const roomController = require('./controllers/roomController');
+const itemController = require('./controllers/itemController');
 
 const PORT = 3000;
 
@@ -18,7 +19,8 @@ app.use(express.static(path.join(__dirname, '../src/')));
 app.use(express.static(path.join(__dirname, '../')));
 
 // --- API routes ------------------- //
-app.get('/api/projects/all', projectController.getAllProjects);
-app.get('api/rooms', roomController.getRooms);
+app.get('/api/systems', systemController.getSystems);
+app.get('/api/rooms/:systemId', roomController.getRooms);
+app.get('/api/:type/:systemId', itemController.getQueryType, itemController.getItems);
 
 app.listen(PORT, () => console.log(`Server listening on port ${PORT}`));
