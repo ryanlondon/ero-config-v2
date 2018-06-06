@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon server/index.js",
     "test": "mocha test/test.js",
-    "lint": "node_modules/.bin/eslint server/index.js",
+    "lint": "node_modules/.bin/eslint .",
     "build": "webpack -w"
   },
   "repository": {

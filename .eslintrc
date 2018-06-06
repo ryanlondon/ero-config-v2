@@ -1,13 +1,22 @@
 {
-  "extends": "airbnb-base",
+  "extends": ["airbnb-base", "plugin:react/all" ],
   "env": {
     "browser": true,
     "node": true,
     "mocha": true
   },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
   "rules": {
     "no-param-reassign": [2, {"props": false}],
     "no-unused-expressions": ["error", { "allowTernary": true }],
-    "no-underscore-dangle": 0
-  }
+    "no-underscore-dangle": 0,
+    "no-magic-numbers": 1,
+    "sort-imports": 0,
+    "sort-keys": 0
+  },
+  "plugins": [ "react" ]
 }

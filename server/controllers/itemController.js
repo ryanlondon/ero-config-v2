@@ -8,10 +8,10 @@ module.exports = {
     next();
   },
 
-  getItems: (req, res, next) => {
+  getItems: (req, res) => {
     db.query(res.locals.queryType, [req.params.systemId])
       .then(result => res.send(result.rows))
-      .catch(err => {
+      .catch((err) => {
         console.error(`<< ERROR >> Error retreiving ${req.params.type} from database:\n`, err);
         res.status(500).send(err);
       });
