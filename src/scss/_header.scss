@@ -12,7 +12,7 @@ header {
     margin: 0.4em 0;
   }
 
-  .header-top {
+  .header-left {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -67,11 +67,11 @@ header {
       margin-right: 0.5em;
     }
 
-    .header-top {
+    .header-left {
       flex-direction: row;
     }
 
-    .header-bottom {
+    .header-right {
       margin-left: auto;
     }
   }
