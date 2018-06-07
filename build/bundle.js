@@ -66,7 +66,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/index.jsx");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/App.jsx");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -935,7 +935,7 @@ eval("/**\n * Copyright 2014-2015, Facebook, Inc.\n * All rights reserved.\n *\n
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactRouterDom = __webpack_require__(/*! react-router-dom */ \"./node_modules/react-router-dom/es/index.js\");\n\nvar _Header = __webpack_require__(/*! ./containers/Header.jsx */ \"./src/containers/Header.jsx\");\n\nvar _Header2 = _interopRequireDefault(_Header);\n\nvar _RoomsContainer = __webpack_require__(/*! ./containers/RoomsContainer.jsx */ \"./src/containers/RoomsContainer.jsx\");\n\nvar _RoomsContainer2 = _interopRequireDefault(_RoomsContainer);\n\nvar _SourcesContainer = __webpack_require__(/*! ./containers/SourcesContainer.jsx */ \"./src/containers/SourcesContainer.jsx\");\n\nvar _SourcesContainer2 = _interopRequireDefault(_SourcesContainer);\n\nvar _DevicesContainer = __webpack_require__(/*! ./containers/DevicesContainer.jsx */ \"./src/containers/DevicesContainer.jsx\");\n\nvar _DevicesContainer2 = _interopRequireDefault(_DevicesContainer);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar App = function App() {\n  return _react2.default.createElement(\n    _reactRouterDom.BrowserRouter,\n    null,\n    _react2.default.createElement(\n      'div',\n      { className: 'content' },\n      _react2.default.createElement(_Header2.default, null),\n      _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _RoomsContainer2.default }),\n      _react2.default.createElement(_reactRouterDom.Route, { path: '/sources', component: _SourcesContainer2.default }),\n      _react2.default.createElement(_reactRouterDom.Route, { path: '/devices', component: _DevicesContainer2.default })\n    )\n  );\n};\n\nexports.default = App;\n\n//# sourceURL=webpack:///./src/App.jsx?");
+eval("\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactDom = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n\nvar _reactRouterDom = __webpack_require__(/*! react-router-dom */ \"./node_modules/react-router-dom/es/index.js\");\n\nvar _Header = __webpack_require__(/*! ./containers/Header.jsx */ \"./src/containers/Header.jsx\");\n\nvar _Header2 = _interopRequireDefault(_Header);\n\nvar _RoomsContainer = __webpack_require__(/*! ./containers/RoomsContainer.jsx */ \"./src/containers/RoomsContainer.jsx\");\n\nvar _RoomsContainer2 = _interopRequireDefault(_RoomsContainer);\n\nvar _SourcesContainer = __webpack_require__(/*! ./containers/SourcesContainer.jsx */ \"./src/containers/SourcesContainer.jsx\");\n\nvar _SourcesContainer2 = _interopRequireDefault(_SourcesContainer);\n\nvar _DevicesContainer = __webpack_require__(/*! ./containers/DevicesContainer.jsx */ \"./src/containers/DevicesContainer.jsx\");\n\nvar _DevicesContainer2 = _interopRequireDefault(_DevicesContainer);\n\nvar _app = __webpack_require__(/*! ./scss/app.scss */ \"./src/scss/app.scss\");\n\nvar _app2 = _interopRequireDefault(_app);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar App = function App() {\n  return _react2.default.createElement(\n    _reactRouterDom.BrowserRouter,\n    null,\n    _react2.default.createElement(\n      'div',\n      { className: 'content' },\n      _react2.default.createElement(_Header2.default, null),\n      _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _RoomsContainer2.default }),\n      _react2.default.createElement(_reactRouterDom.Route, { path: '/sources', component: _SourcesContainer2.default }),\n      _react2.default.createElement(_reactRouterDom.Route, { path: '/devices', component: _DevicesContainer2.default })\n    )\n  );\n};\n\n(0, _reactDom.render)(_react2.default.createElement(App, null), document.getElementById('root'));\n\n//# sourceURL=webpack:///./src/App.jsx?");
 
 /***/ }),
 
@@ -1020,18 +1020,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 
 "use strict";
 eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar SourcesContainer = function SourcesContainer(props) {\n  return _react2.default.createElement(\n    'h2',\n    null,\n    'Sources'\n  );\n};\n\nexports.default = SourcesContainer;\n\n//# sourceURL=webpack:///./src/containers/SourcesContainer.jsx?");
-
-/***/ }),
-
-/***/ "./src/index.jsx":
-/*!***********************!*\
-  !*** ./src/index.jsx ***!
-  \***********************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactDom = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n\nvar _App = __webpack_require__(/*! ./App.jsx */ \"./src/App.jsx\");\n\nvar _App2 = _interopRequireDefault(_App);\n\nvar _app = __webpack_require__(/*! ./scss/app.scss */ \"./src/scss/app.scss\");\n\nvar _app2 = _interopRequireDefault(_app);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n(0, _reactDom.render)(_react2.default.createElement(_App2.default, null), document.getElementById('root'));\n\n//# sourceURL=webpack:///./src/index.jsx?");
 
 /***/ }),
 

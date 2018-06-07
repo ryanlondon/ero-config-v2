@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+import { render } from 'react-dom';
 import { BrowserRouter, Route } from 'react-router-dom';
 import Header from './containers/Header.jsx';
 import RoomsContainer from './containers/RoomsContainer.jsx';
 import SourcesContainer from './containers/SourcesContainer.jsx';
 import DevicesContainer from './containers/DevicesContainer.jsx';
+import styles from './scss/app.scss';
 
 const App = () => (
   <BrowserRouter>
@@ -16,4 +18,4 @@ const App = () => (
   </BrowserRouter>
 );
 
-export default App;
+render(<App />, document.getElementById('root'));
