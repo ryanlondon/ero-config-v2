@@ -53,6 +53,10 @@ header {
       text-decoration: none;
       font-weight: 300;
       color: $light-text-color;
+      transition: all 0.3s ease-in-out;
+      &.active {
+        color: #ccff00;
+      }
     }
   }
 }
