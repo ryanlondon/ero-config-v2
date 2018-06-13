@@ -1,16 +1,16 @@
 import * as types from '../actions/actionTypes';
 
 const initialState = {
-  page: 'rooms',
+  currentPage: 'rooms',
 };
 
-const navigate = (state = initialState, action) => {
+const navigationReducer = (state = initialState, action) => {
   switch (action.type) {
     case types.NAVIGATE:
-      return { page: action.page };
+      return { ...state, currentPage: action.page };
     default:
       return state;
   }
 };
 
-export default navigate;
+export default navigationReducer;
