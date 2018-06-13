@@ -1,1 +1,4 @@
 export const NAVIGATE = 'NAVIGATE';
+
+export const UPDATE_SYSTEMS = 'UPDATE_SYSTEMS';
+export const FETCH_SYSTEMS = 'FETCH_SYSTEMS';
